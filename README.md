@@ -2,7 +2,7 @@
 
 ## Descripción del Proyecto
 
-**XSorter Tooltips** es un conjunto de herramientas desarrolladas internamente en **DHL Supply Chain** para añadir ciertas funcionalidades al sistema **XSorter** creado por Vandelande. Estas mejoras están diseñadas para optimizar tareas productivas donde el sistema original no ha ofrecido mejoras . El objetivo es mejorar ciertas funcionalidades que faciliten el día a día del equipo de manera interna.
+**XSorter Tooltips** es un conjunto de herramientas desarrolladas para añadir ciertas funcionalidades al sistema **XSorter** creado por Vandelande. Estas mejoras están diseñadas para optimizar tareas productivas donde el sistema original no ha ofrecido mejoras . El objetivo es mejorar ciertas funcionalidades que faciliten el día a día del equipo de manera interna.
 
 Las herramientas han sido creadas completamente en **JavaScript** y su integración se realiza mediante **Tampermonkey**.
 
