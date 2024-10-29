@@ -5,6 +5,8 @@
 // @description  Impresión de soportes con mensajes personalizados y depuración
 // @author       Ahmed Bibi
 // @match        http://2.14.233.15:8088/XS/VPANEL*
+// @downloadURL  https://raw.githubusercontent.com/bibi-dhl/XSorter-Tooltips/refs/heads/main/xsorter_soportes.js
+// @updateURL    https://raw.githubusercontent.com/bibi-dhl/XSorter-Tooltips/refs/heads/main/xsorter_soportes.js
 // @grant        none
 // ==/UserScript==
 
