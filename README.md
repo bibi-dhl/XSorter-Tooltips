@@ -2,7 +2,7 @@
 
 ## Descripción del Proyecto
 
-**XSorter Tooltips** es un conjunto de herramientas desarrolladas para añadir ciertas funcionalidades al sistema **XSorter** creado por Vandelande. Estas mejoras están diseñadas para optimizar tareas productivas donde el sistema original no ha ofrecido mejoras . El objetivo es mejorar ciertas funcionalidades que faciliten el día a día del equipo de manera interna.
+**XSorter Tooltips** es un conjunto de herramientas desarrolladas internamente en **DHL Supply Chain** para añadir ciertas funcionalidades al sistema **XSorter** creado por Vandelande. Estas mejoras están diseñadas para optimizar tareas productivas donde el sistema original podría no haber ofrecido mejoras significativas. El objetivo es mejorar ciertas funcionalidades que faciliten el día a día del equipo de manera interna.
 
 Las herramientas han sido creadas completamente en **JavaScript** y su integración se realiza mediante **Tampermonkey**.
 
@@ -36,14 +36,34 @@ Las herramientas han sido creadas completamente en **JavaScript** y su integraci
 2. Busca "Tampermonkey".
 3. Haz clic en "Obtener" y sigue las instrucciones para instalar la extensión.
 
-### Instalación del Script `xsorter_soportes.js` en Tampermonkey
+### Instalación de los Scripts en Tampermonkey
+
+#### `xsorter_required.js`
+
+Este archivo es obligatorio para que las herramientas funcionen correctamente.
+
+1. Abre tu navegador y haz clic en el icono de Tampermonkey en la barra de herramientas.
+2. Selecciona "Dashboard" o "Administrar panel de scripts".
+3. Haz clic en el botón "+" para crear un nuevo script.
+4. Copia y pega el contenido del archivo `xsorter_required.js` en el editor.
+5. Guarda el script haciendo clic en "Archivo" y luego en "Guardar" o simplemente presionando `Ctrl + S` (o `Cmd + S` en Mac).
+
+#### `xsorter_soportes.js`
 
 1. Abre tu navegador y haz clic en el icono de Tampermonkey en la barra de herramientas.
 2. Selecciona "Dashboard" o "Administrar panel de scripts".
 3. Haz clic en el botón "+" para crear un nuevo script.
 4. Copia y pega el contenido del archivo `xsorter_soportes.js` en el editor.
 5. Guarda el script haciendo clic en "Archivo" y luego en "Guardar" o simplemente presionando `Ctrl + S` (o `Cmd + S` en Mac).
-6. El script ahora estará activo y funcionando en los sitios especificados.
+
+### Establecer Prioridad de los Scripts
+
+Para que `xsorter_required.js` funcione correctamente, debe tener la prioridad número 1 en Tampermonkey.
+
+1. Abre Tampermonkey y ve al "Dashboard" o "Administrar panel de scripts".
+2. Encuentra `xsorter_required.js` en la lista de scripts.
+3. Haz clic y arrastra `xsorter_required.js` hacia la parte superior de la lista para asegurarte de que tenga la prioridad número 1.
+4. Asegúrate de que `xsorter_soportes.js` esté ubicado debajo de `xsorter_required.js` en la lista de scripts.
 
 ## Autor
 
