@@ -8,7 +8,8 @@
 // @exclude      http://2.14.233.15:8088/XS/MANUALC*
 // @exclude      http://2.14.233.15:8088/XS/VREFPEN*
 // @exclude      http://2.14.233.15:8088/XS/VPANELB?USERID=*
-// @updateURL    file:///P:/XSORTER/02.%20ADMINISTRACION/TM/Scripts/prod/reparto_manual.js
+// @updateURL    https://raw.githubusercontent.com/bibi-dhl/XSorter-Tooltips/refs/heads/main/xsorter_manual.js
+// @downloadURL  https://raw.githubusercontent.com/bibi-dhl/XSorter-Tooltips/refs/heads/main/xsorter_manual.js
 // @grant        none
 // ==/UserScript==
 
