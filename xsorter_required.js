@@ -5,6 +5,8 @@
 // @description  Gestiona el envío de mensajes al webhook de Teams y la gestión de cookies para estadísticas de uso.
 // @autor        Ahmed Bibi
 // @match        http://2.14.233.15:8088/XS/*
+// @downloadURL  https://raw.githubusercontent.com/bibi-dhl/XSorter-Tooltips/refs/heads/main/xsorter_required.js
+// @updateURL    https://raw.githubusercontent.com/bibi-dhl/XSorter-Tooltips/refs/heads/main/xsorter_required.js
 // @grant        none
 // ==/UserScript==
 
