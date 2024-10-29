@@ -12,27 +12,27 @@ Las herramientas han sido creadas completamente en **JavaScript** y su integraci
 
 #### Google Chrome
 
-1. Abre Google Chrome y navega a la Chrome Web Store.
+1. Abre Google Chrome y navega a la [Chrome Web Store](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo).
 2. Busca "Tampermonkey".
 3. Haz clic en "Añadir a Chrome".
 4. Confirma la instalación haciendo clic en "Añadir extensión".
 
 #### Mozilla Firefox
 
-1. Abre Mozilla Firefox y navega a la página de complementos de Firefox.
+1. Abre Mozilla Firefox y navega a la [página de complementos de Firefox](https://addons.mozilla.org/firefox/addon/tampermonkey/).
 2. Busca "Tampermonkey".
 3. Haz clic en "Añadir a Firefox".
 4. Confirma la instalación haciendo clic en "Añadir".
 
 #### Microsoft Edge
 
-1. Abre Microsoft Edge y navega a la Microsoft Edge Add-ons Store.
+1. Abre Microsoft Edge y navega a la [Microsoft Edge Add-ons Store](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo).
 2. Busca "Tampermonkey".
 3. Haz clic en "Obtener" y luego en "Añadir extensión".
 
 #### Safari
 
-1. Abre Safari y navega a la Mac App Store.
+1. Abre Safari y navega a la [Mac App Store](https://apps.apple.com/app/tampermonkey/id1482490089).
 2. Busca "Tampermonkey".
 3. Haz clic en "Obtener" y sigue las instrucciones para instalar la extensión.
 
