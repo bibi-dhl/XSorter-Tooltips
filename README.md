@@ -40,7 +40,7 @@ Las herramientas han sido creadas completamente en **JavaScript** y su integraci
 
 #### `xsorter_required.js`
 
-Este archivo es obligatorio para que las herramientas funcionen correctamente.
+> **Nota:** Este archivo es obligatorio para que las herramientas funcionen correctamente.
 
 1. Abre tu navegador y haz clic en el icono de Tampermonkey en la barra de herramientas.
 2. Selecciona "Dashboard" o "Administrar panel de scripts".
@@ -48,12 +48,12 @@ Este archivo es obligatorio para que las herramientas funcionen correctamente.
 4. Copia y pega el contenido del archivo `xsorter_required.js` en el editor.
 5. Guarda el script haciendo clic en "Archivo" y luego en "Guardar" o simplemente presionando `Ctrl + S` (o `Cmd + S` en Mac).
 
-#### `xsorter_soportes.js`
+#### Otros Scripts (`xsorter_soportes.js` como ejemplo)
 
 1. Abre tu navegador y haz clic en el icono de Tampermonkey en la barra de herramientas.
 2. Selecciona "Dashboard" o "Administrar panel de scripts".
 3. Haz clic en el botón "+" para crear un nuevo script.
-4. Copia y pega el contenido del archivo `xsorter_soportes.js` en el editor.
+4. Copia y pega el contenido del archivo del script deseado (por ejemplo, `xsorter_soportes.js`) en el editor.
 5. Guarda el script haciendo clic en "Archivo" y luego en "Guardar" o simplemente presionando `Ctrl + S` (o `Cmd + S` en Mac).
 
 ### Establecer Prioridad de los Scripts
@@ -63,7 +63,7 @@ Para que `xsorter_required.js` funcione correctamente, debe tener la prioridad n
 1. Abre Tampermonkey y ve al "Dashboard" o "Administrar panel de scripts".
 2. Encuentra `xsorter_required.js` en la lista de scripts.
 3. Haz clic y arrastra `xsorter_required.js` hacia la parte superior de la lista para asegurarte de que tenga la prioridad número 1.
-4. Asegúrate de que `xsorter_soportes.js` esté ubicado debajo de `xsorter_required.js` en la lista de scripts.
+4. Asegúrate de que otros scripts estén ubicados debajo de `xsorter_required.js` en la lista de scripts.
 
 ## Autor
 
