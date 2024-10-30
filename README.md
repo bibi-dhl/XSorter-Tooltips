@@ -67,7 +67,7 @@ Para que `xsorter_required.js` funcione correctamente, debe tener la prioridad n
 
 ## Autor
 
-Este proyecto ha sido creado con amor en Barcelona en 2024 por **Ahmed Bibi**.
+Este proyecto ha sido creado por **Ahmed Bibi**.
 
 ## Licencia
 
