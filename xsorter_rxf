@@ -5,7 +5,8 @@
 // @description  Script para añadir un botón que imprima la lista de referencias pendientes en un RAS de radiofrecuencia (03, 05, 07, 50) y mostrar un mensaje si la página del iframe está vacía, además de incluir un logotipo en la esquina superior izquierda
 // @author       Ahmed Bibi
 // @match        http://2.14.233.15:8088/XS/VMSGRAD?RAS=*
-// @updateURL    file:///P:/XSORTER/02.%20ADMINISTRACION/TM/Scripts/prod/rxf_impresion.js
+// @downloadURL  https://github.com/bibi-dhl/XSorter-Tooltips/raw/refs/heads/main/xsorter_rxf
+// @updateURL    https://github.com/bibi-dhl/XSorter-Tooltips/raw/refs/heads/main/xsorter_rxf
 // @grant        none
 // ==/UserScript==
 
