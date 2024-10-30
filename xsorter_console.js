@@ -5,7 +5,7 @@
 // @description  Añade comandos para obtener estadísticas de sobrantes gestionados.
 // @autor        Ahmed Bibi
 // @match        http://2.14.233.15:8088/XS/*
-// @updateURL    file:///P:/XSORTER/02.%20ADMINISTRACION/TM/Scripts/prod/sobrantes_gestionados.js
+// @updateURL    https://raw.githubusercontent.com/bibi-dhl/XSorter-Tooltips/refs/heads/main/xsorter_console.js
 // @grant        none
 // ==/UserScript==
 
