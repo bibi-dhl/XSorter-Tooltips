@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         XSorter - RAS RXF |  Botón de Imprimir
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  Script para añadir un botón que imprima la lista de referencias pendientes en un RAS de radiofrecuencia (03, 05, 07, 50) y mostrar un mensaje si la página del iframe está vacía, además de incluir un logotipo en la esquina superior izquierda
 // @author       Ahmed Bibi
 // @match        http://2.14.233.15:8088/XS/VMSGRAD?RAS=*
