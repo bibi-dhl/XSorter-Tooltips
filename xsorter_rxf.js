@@ -44,7 +44,7 @@
                 // Verificar si el contenedor del enlace ya existe
                 if (!iframeDoc.getElementById('enlace-impreso')) {
                     // Obtener los últimos dos caracteres del enlace
-                    var lastTwoChars = iframeSrc.slice(-2);
+                    var lastTwoChars = iframeSrc.slice(-3);
 
                     // Crear un contenedor para el texto del enlace
                     var linkContainer = iframeDoc.createElement('div');
