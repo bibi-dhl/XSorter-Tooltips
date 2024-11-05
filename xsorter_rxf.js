@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         XSorter - RAS RXF |  Botón de Imprimir
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.4
 // @description  Script para añadir un botón que imprima la lista de referencias pendientes en un RAS de radiofrecuencia (03, 05, 07, 50) y mostrar un mensaje si la página del iframe está vacía, además de incluir un logotipo en la esquina superior izquierda
 // @author       Ahmed Bibi
 // @match        http://2.14.233.15:8088/XS/VMSGRAD?RAS=*
-// @downloadURL  https://github.com/bibi-dhl/XSorter-Tooltips/raw/refs/heads/main/xsorter_rxf
-// @updateURL    https://github.com/bibi-dhl/XSorter-Tooltips/raw/refs/heads/main/xsorter_rxf
+// @downloadURL  https://github.com/bibi-dhl/XSorter-Tooltips/raw/refs/heads/main/xsorter_rxf.js
+// @updateURL    https://github.com/bibi-dhl/XSorter-Tooltips/raw/refs/heads/main/xsorter_rxf.js
 // @grant        none
 // ==/UserScript==
 
@@ -31,13 +31,13 @@
 
                 // Verificar si el contenido del iframe está vacío
                 if (!iframeDoc.body || iframeDoc.body.innerHTML.trim() === "") {
-                    alert("La página del iframe está vacía.");
+                    console.error("La página del iframe está vacía.");
                     return;
                 }
 
                 // Verificar si el contenido del iframe contiene el mensaje "User ID not found or not available."
                 if (iframeDoc.body.textContent.includes("User ID not found or not available.")) {
-                    alert("No se encontró el User ID o no está disponible.");
+                    console.error("No se encontró el User ID o no está disponible.");
                     return;
                 }
 
@@ -83,25 +83,36 @@
                 iframe.contentWindow.focus();
                 iframe.contentWindow.print();
             } else {
-                alert("No se encontró el iframe con el nombre 'familias'.");
+                console.error("No se encontró el iframe con el nombre 'familias'.");
             }
         });
 
-        // Encontrar el contenedor de los botones existentes
-        var buttonsContainer = document.querySelector('tr > td[colspan="2"]').parentNode;
+        // Encontrar la fila que contiene la imagen raya.gif
+        var rayaRow = document.querySelector('tr > td[colspan="3"] > img[src="../images/raya.gif"]').parentNode.parentNode;
 
-        if (buttonsContainer) {
-            // Crear una celda para el nuevo botón
+        if (rayaRow) {
+            // Crear una fila nueva para el botón
+            var newRow = document.createElement('tr');
             var newCell = document.createElement('td');
-            newCell.align = "center";
-            newCell.width = "33%";
-            newCell.colSpan = "2";
+            newCell.colSpan = "3"; // Ajustar el colspan según sea necesario
+            newCell.style.textAlign = "center"; // Centrar el botón
             newCell.appendChild(printButton);
+            newRow.appendChild(newCell);
 
-            // Insertar la nueva celda entre los botones existentes
-            buttonsContainer.insertBefore(newCell, buttonsContainer.children[2]);
+            // Crear una fila nueva para el salto de línea
+            var brRow = document.createElement('tr');
+            var brCell = document.createElement('td');
+            brCell.colSpan = "3"; // Ajustar el colspan según sea necesario
+            brCell.innerHTML = '<br>';
+            brRow.appendChild(brCell);
+
+            // Insertar la nueva fila del botón antes de la fila de raya.gif
+            rayaRow.parentNode.insertBefore(newRow, rayaRow);
+
+            // Insertar la fila del salto de línea antes de la fila de raya.gif
+            rayaRow.parentNode.insertBefore(brRow, rayaRow);
         } else {
-            console.error("No se encontró el contenedor de los botones.");
+            console.error("No se encontró la fila que contiene la imagen raya.gif.");
         }
     });
 })();
