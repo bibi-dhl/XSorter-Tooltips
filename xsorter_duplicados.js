@@ -8,6 +8,8 @@
 // @icon         https://www.google.com/s2/favicons?domain=example.com
 // @grant        none
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
+// @downloadURL  https://raw.githubusercontent.com/bibi-dhl/XSorter-Tooltips/refs/heads/main/xsorter_duplicados.js
+// @updateURL    https://raw.githubusercontent.com/bibi-dhl/XSorter-Tooltips/refs/heads/main/xsorter_duplicados.js
 // ==/UserScript==
 
 (function() {
